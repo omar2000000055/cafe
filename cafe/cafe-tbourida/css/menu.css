@@ -1,0 +1,128 @@
+.menu-hero {
+  background: var(--dark2);
+  padding: 10rem 4rem 6rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-hero::before {
+  content: 'MENU';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-title);
+  font-size: 200px;
+  font-weight: 600;
+  color: rgba(212, 168, 67, 0.03);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.menu-body {
+  background: var(--dark);
+  padding: 4rem;
+}
+
+.menu-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(212, 168, 67, 0.15);
+  flex-wrap: wrap;
+}
+
+.menu-tab {
+  padding: 14px 32px;
+  color: rgba(212, 168, 67, 0.4);
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: var(--font-body);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: all var(--transition);
+}
+
+.menu-tab.on {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
+.menu-tab:hover {
+  color: var(--gold2);
+}
+
+.menu-panel {
+  display: none;
+}
+
+.menu-panel.on {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.menu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: rgba(48, 26, 12, 0.4);
+  border: 1px solid rgba(212, 168, 67, 0.05);
+  transition: all var(--transition);
+}
+
+.menu-row:hover {
+  background: rgba(48, 26, 12, 0.8);
+  border-color: rgba(212, 168, 67, 0.2);
+}
+
+.menu-row-name {
+  color: var(--sand);
+  font-size: 16px;
+}
+
+.menu-row-desc {
+  color: rgba(237, 217, 163, 0.35);
+  font-size: 12px;
+  display: block;
+  margin-top: 2px;
+  font-style: italic;
+}
+
+.menu-row-price {
+  font-family: var(--font-title);
+  background: linear-gradient(135deg, var(--gold), var(--amber));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 15px;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+@media (max-width: 900px) {
+  .menu-hero {
+    padding: 8rem 2rem 4rem;
+  }
+
+  .menu-body {
+    padding: 2rem 1.5rem;
+  }
+
+  .menu-panel.on {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-tab {
+    padding: 12px 16px;
+    font-size: 9px;
+  }
+}

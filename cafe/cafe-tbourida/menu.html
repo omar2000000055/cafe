@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu — Joli Virage</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav-logo">JOLI VIRAGE</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="apropos.html">À Propos</a></li>
+    </ul>
+  </nav>
+
+  <div class="menu-hero">
+    <div class="sec-head reveal">
+      <span class="sec-tag">Saveurs & Douceurs</span>
+      <h2 class="gold">Notre Menu</h2>
+      <div class="gold-rule"><span></span><i>✦</i><span></span></div>
+    </div>
+  </div>
+
+  <div class="menu-body">
+    <div class="menu-tabs">
+      <button class="menu-tab on" onclick="tab(this,'t-chaud')">Boissons Chaudes</button>
+      <button class="menu-tab" onclick="tab(this,'t-froid')">Boissons Froides</button>
+      <button class="menu-tab" onclick="tab(this,'t-snack')">Snacks</button>
+      <button class="menu-tab" onclick="tab(this,'t-sweet')">Douceurs</button>
+    </div>
+    <div id="t-chaud" class="menu-panel on">
+      <div class="menu-row">
+        <div><span class="menu-row-name">Café Marocain</span><span class="menu-row-desc">Tradition pure</span></div>
+        <span class="menu-row-price">12 DH</span>
+      </div>
+      <div class="menu-row">
+        <div><span class="menu-row-name">Thé à la Menthe</span><span class="menu-row-desc">Fraîcheur marocaine</span>
+        </div><span class="menu-row-price">10 DH</span>
+      </div>
+      <div class="menu-row">
+        <div><span class="menu-row-name">Café Noisette</span><span class="menu-row-desc">Doux et velouté</span></div>
+        <span class="menu-row-price">15 DH</span>
+      </div>
+      <div class="menu-row">
+        <div><span class="menu-row-name">Cappuccino</span><span class="menu-row-desc">Mousse onctueuse</span></div><span
+          class="menu-row-price">20 DH</span>
+      </div>
+      <div class="menu-row">
+        <div><span class="menu-row-name">Chocolat Chaud</span><span class="menu-row-desc">Réconfort absolu</span></div>
+        <span class="menu-row-price">18 DH</span>
+      </div>
+      <div class="menu-row">
+        <div><span class="menu-row-name">Réalisé Maison</span><span class="menu-row-desc">Spécialité du chef</span>
+        </div><span class="menu-row-price">22 DH</span>
+      </div>
+    </div>
+    <div id="t-froid" class="menu-panel">
+      <div class="menu-row">
+        <div><span class="menu-row-name">Jus d'Orange Frais</span><span class="menu-row-desc">Pressé minute</span></div>
+        <span class="menu-row-price">15 DH</span>
+      </div>
+      <div class="menu-row">
+        <div><span class="menu-row-name">Limonade Maison</span><span class="menu-row-desc">Recette secrète</span></div>
+        <span class="menu-row-price">18 DH</span>
+      </div>
+      <div class="menu-row">
+        <div><span class="menu-row-name">Smoothie Fruits</span><span class="menu-row-desc">Fruits de saison</span></div>
+        <span class="menu-row-price">22 DH</span>
+      </div>
+      <div class="menu-row">
+        <div><span class="menu-row-name">Frappé Café</span><span class="menu-row-desc">Glacé & intense</span></div><span
+          class="menu-row-price">25 DH</span>
+      </div>
+      <div class="menu-row">
+        <div><span class="menu-row-name">Eau Minérale</span><span class="menu-row-desc">Sidi Ali / Ain</span></div><span
+          class="menu-row-price">8 DH</span>
+      </div>
+    </div>
+    <div id="t-snack" class="menu-panel">
+      <div class="menu-row">
+        <div><span class="menu-row-name">Msemen au Miel</span><span class="menu-row-desc">Fait maison</span></div><span
+          class="menu-row-price">12 DH</span>
+      </div>
+      <div class="menu-row">
+        <div><span class="menu-row-name">Croissant Beurre</span><span class="menu-row-desc">Pur beurre</span></div><span
+          class="menu-row-price">10 DH</span>
+      </div>
+      <div class="menu-row">
+        <div><span class="menu-row-name">Sandwich Club</span><span class="menu-row-desc">Généreux et frais</span></div>
+        <span class="menu-row-price">28 DH</span>
+      </div>
+      <div class="menu-row">
+        <div><span class="menu-row-name">Pain Perdu</span><span class="menu-row-desc">Cannelle & miel</span></div><span
+          class="menu-row-price">15 DH</span>
+      </div>
+      <div class="menu-row">
+        <div><span class="menu-row-name">Briouate Sucrée</span><span class="menu-row-desc">Amandes & fleur
+            d'oranger</span></div><span class="menu-row-price">8 DH</span>
+      </div>
+    </div>
+    <div id="t-sweet" class="menu-panel">
+      <div class="menu-row">
+        <div><span class="menu-row-name">Gâteau Maison</span><span class="menu-row-desc">Recette du jour</span></div>
+        <span class="menu-row-price">20 DH</span>
+      </div>
+      <div class="menu-row">
+        <div><span class="menu-row-name">Cheesecake</span><span class="menu-row-desc">Onctueux & fondant</span></div>
+        <span class="menu-row-price">28 DH</span>
+      </div>
+      <div class="menu-row">
+        <div><span class="menu-row-name">Crêpe Nutella</span><span class="menu-row-desc">Fine & dorée</span></div><span
+          class="menu-row-price">22 DH</span>
+      </div>
+      <div class="menu-row">
+        <div><span class="menu-row-name">Cornes de Gazelle</span><span class="menu-row-desc">Tradition marocaine</span>
+        </div><span class="menu-row-price">15 DH</span>
+      </div>
+      <div class="menu-row">
+        <div><span class="menu-row-name">Baklava</span><span class="menu-row-desc">Miel & pistaches</span></div><span
+          class="menu-row-price">18 DH</span>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-bottom" style="border:none; padding:0;">
+      <span class="footer-copy">© 2025 Joli Virage — Rue Bani Ouarissi, Rabat</span>
+      <span class="footer-addr">Les prix peuvent varier selon la saison</span>
+    </div>
+  </footer>
+
+  <script>
+    function tab(btn, panelId) {
+      document.querySelectorAll('.menu-tab').forEach(t => t.classList.remove('on'));
+      document.querySelectorAll('.menu-panel').forEach(p => p.classList.remove('on'));
+      btn.classList.add('on');
+      document.getElementById(panelId).classList.add('on');
+    }
+
+    const reveals = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) setTimeout(() => e.target.classList.add('vis'), i * 100);
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => obs.observe(el));
+  </script>
+</body>
+
+</html>
