@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie — Joli Virage</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/galerie.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav-logo">JOLI VIRAGE</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="galerie.html" class="active">Galerie</a></li>
+      <li><a href="apropos.html">À Propos</a></li>
+    </ul>
+  </nav>
+
+  <div class="galerie-body">
+    <div class="sec-head reveal" style="margin-bottom:3rem;">
+      <span class="sec-tag">En images</span>
+      <h2 class="light" style="font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,56px);">Galerie</h2>
+      <div class="gold-rule"><span></span><i>✦</i><span></span></div>
+    </div>
+    <div class="galerie-mosaic">
+      <div class="g-item reveal">🏇
+        <div class="g-overlay"><span class="g-label">Tbourida</span><span class="g-sub">Compétition équestre</span>
+        </div>
+        <span class="g-num">01</span>
+      </div>
+      <div class="g-item reveal">☕
+        <div class="g-overlay"><span class="g-label">Le Café</span><span class="g-sub">Ambiance intérieure</span></div>
+        <span class="g-num">02</span>
+      </div>
+      <div class="g-item reveal">🗡️
+        <div class="g-overlay"><span class="g-label">Décoration</span><span class="g-sub">Armes ornementales</span>
+        </div>
+        <span class="g-num">03</span>
+      </div>
+      <div class="g-item reveal">📖
+        <div class="g-overlay"><span class="g-label">Espace Étude</span><span class="g-sub">Calme & concentration</span>
+        </div>
+        <span class="g-num">04</span>
+      </div>
+      <div class="g-item reveal">🏆
+        <div class="g-overlay"><span class="g-label">Palmarès</span><span class="g-sub">Trophées de tbourida</span>
+        </div>
+        <span class="g-num">05</span>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-bottom" style="border:none; padding:0;">
+      <span class="footer-copy">© 2025 Joli Virage</span>
+      <span class="footer-addr">📍 Rue Bani Ouarissi, Rabat</span>
+    </div>
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) setTimeout(() => e.target.classList.add('vis'), i * 100);
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => obs.observe(el));
+  </script>
+</body>
+
+</html>
